@@ -16,7 +16,7 @@ services:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_BROKER_BACKEND=redis://redis:6379/0
       - MAX_WORKERS=5
-      - REDIS_HOST=host.docker.internal
+      - REDIS_HOST=redis
       - MONGO_DBNAME=mal
       - MONGO_HOST=mongo
       - MONGO_PORT=27017
@@ -41,7 +41,7 @@ services:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_BROKER_BACKEND=redis://redis:6379/0
       - MAX_WORKERS=5
-      - REDIS_HOST=host.docker.internal
+      - REDIS_HOST=redis
       - MONGO_DBNAME=mal
       - MONGO_HOST=mongo
       - MONGO_PORT=27017
