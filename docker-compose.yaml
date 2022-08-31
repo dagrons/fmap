@@ -11,7 +11,7 @@ services:
     networks:
       - mal    
     ports:
-      - 5001:5000
+      - 5000:5000
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
       - CELERY_BROKER_BACKEND=redis://redis:6379/0
